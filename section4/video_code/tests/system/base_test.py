@@ -11,5 +11,5 @@ from app import app
 
 class BaseTest(TestCase):
     def setUp(self):
-        self.app.testing = True
         self.app = app.test_client
+        # self.app.testing = True
